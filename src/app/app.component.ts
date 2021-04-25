@@ -65,4 +65,3 @@ export class AppComponent {
     else return;
   }
 }
-// this.students.splice(iterStudent, 1);
