@@ -17,7 +17,13 @@
       "dom"
     ]
   },
-  "angularCompilerOptions": {
+/*  "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
+  }*/
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "preserveWhitespaces": true,
+    "strictTemplates": true,
+    "strictInjectionParameters": true
   }
 }

@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  margin: 0 auto;
+  width: 1024px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+.main h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main__control {
+  display: flex;
+  justify-content: space-between;
+}
+.main__search {
+  margin-bottom: 20px;
+}
+.main__search label {
+  margin-right: 10px;
+}
+.main__search input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 400px;
+}
+.list {
+  margin-top: 30px;
+  width: 100%;
+}
+.list th {
+  padding: 5px 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+.list input {
+  margin-left: 0;
+  font-weight: bold;
+}
+.list .list__check {
+  margin-left: 20px;
+}
+.list .list__filter {
+  width: 100%;
+}
+.list td {
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+.list td:not(:last-child) {
+  border-right: 1px solid gray;
+}
+.linered {
+  background-color: #ffbaba;
+}
+.lineyellow {
+  background-color: #ffffa3;
+  font-weight: bold;
+}
+
+.popup {
+  padding: 25px;
+  width: 500px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: azure;
+  z-index: 5;
+  position: fixed;
+  top: 25%;
+  left: calc(50% - 250px);
+}
+.popup p {
+  margin: 0 0 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.popup button {
+  margin: 0 10px;
+  width: 50px;
+}
+.overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+  z-index: 3;
+}
