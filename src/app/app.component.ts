@@ -53,15 +53,13 @@ export class AppComponent {
   ];
   surname: string;
   name: string;
-  patronymic: string;
   birth: string;
   check: boolean = true;
   search: string = "";
   condition: boolean = false;
 
-  deleteStudent(iterStudent) {
+  deleteStudent(iterStudent: number): void {
     this.condition = true;
-    if (confirm("Удалить студента?")) this.students.splice(iterStudent, 1);
-    else return;
+    if (confirm("Удалить студента?")) { this.students.splice(iterStudent, 1); } else { return; }
   }
 }
